@@ -1,0 +1,164 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-25T14:05:15.536Z",
+        "line": 15,
+        "name": "Add place into the Add Place API",
+        "description": "",
+        "id": "validation-the-add-place-api;add-place-into-the-add-place-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3470442377,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Associated add place payload \"Frontline house\" \"French-IN\" \"29, grggf layofut, cohen 09\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Frontline house\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"French-IN\"",
+                  "offset": 47
+                },
+                {
+                  "val": "\"29, grggf layofut, cohen 09\"",
+                  "offset": 59
+                }
+              ],
+              "location": "AddPlaceStepDefinition.associated_add_place_payload(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3984480801,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "providing \"APIAddTest\" \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"APIAddTest\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 23
+                }
+              ],
+              "location": "AddPlaceStepDefinition.providing_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10044805,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the responce with status code 200 is received",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 30
+                }
+              ],
+              "location": "AddPlaceStepDefinition.the_responce_with_status_code_200_is_received(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 908769130,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the reasonse \"status\" is received as \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 37
+                }
+              ],
+              "location": "AddPlaceStepDefinition.the_reasonse_status_is_received_as_ok(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16469572,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the reasonse \"scope\" is received as \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 36
+                }
+              ],
+              "location": "AddPlaceStepDefinition.the_reasonse_status_is_received_as_ok(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 408460002,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify place_Id created maps to \"Frontline house\" using \"APIGetTest\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Frontline house\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"APIGetTest\"",
+                  "offset": 56
+                }
+              ],
+              "location": "AddPlaceStepDefinition.verify_place_Id_created_maps_to_using(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validation the Add Place API",
+    "description": "",
+    "id": "validation-the-add-place-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/addplace.feature",
+    "tags": []
+  }
+]
