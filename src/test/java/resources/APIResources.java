@@ -13,6 +13,7 @@ public enum APIResources {
 	
 	public String getResources()
 	{
+		System.out.println("testing Gitup");
 		return resources;
 	}
 }
